@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CPF Validate</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Formulário de Cadastro</h1>
+
+    <ul>
+      <li>Nenhum campo pode estar vazio</li>
+      <li>Usuário só poderá conter letras e/ou números</li>
+      <li>Usuário usuário deverá ter entre 3 a 12 caracteres</li>
+      <li>Senha precisa ter entre 6 a 12 caracteres</li>
+    </ul>
+
+    <form action="/" method="post" class="form">
+
+      <label>Nome</label>
+      <input class="name validar" type="text">
+
+      <label>Sobrenome</label>
+      <input class="surname validar" type="text">
+
+      <label>CPF</label>
+      <input class="cpf validar" type="text">
+
+      <label>Usuario</label>
+      <input class="user validar" type="text">
+
+      <label>Senha</label>
+      <input class="password validar" type="password">
+
+      <label>Repetir Senha</label>
+      <input class="repeat-password validar" type="password">
+
+      <button class="button" type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="./cpfValidate.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
